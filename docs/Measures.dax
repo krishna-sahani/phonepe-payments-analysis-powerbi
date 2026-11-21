@@ -1,0 +1,47 @@
+// Existing expressions in the supplied report; see Project_Details.md for known limitations.
+
+// Home table: Measures (2)
+Total Transaction value =
+SUM(All_Transactions[Amount])
+
+// Home table: Measures (2)
+Total Transaction =
+COUNT(All_Transactions[Transaction_ID])
+
+// Home table: Measures (2)
+Successfull Transaction =
+CALCULATE(
+    [Total Transaction],
+    All_Transactions[Payment_Status] = "Successful"
+)
+
+// Home table: Measures (2)
+Successfull Rate =
+DIVIDE(
+    [Successfull Transaction],
+    [Total Transaction],
+    0
+)
+
+// Home table: Measures (2)
+Total Users =
+DISTINCTCOUNT(All_Users[User_ID])
+
+// Home table: Measures (2)
+Transaction Value PM =
+CALCULATE([Total Transaction value],DATEADD(Date_Table[Date],-1,MONTH))
+
+// Home table: Measures (2)
+Transaction Value MOM% =
+DIVIDE([Total Transaction value]-[Transaction Value PM],[Transaction Value PM],0)
+
+// Home table: Measures (2)
+Total Transaction PM =
+CALCULATE([Total Transaction],DATEADD(Date_Table[Date],-1,MONTH))
+
+// Home table: Measures (2)
+Total Transaction MOM% =
+DIVIDE(
+    [Total Transaction value] - [Transaction Value PM],
+    [Transaction Value PM]
+)

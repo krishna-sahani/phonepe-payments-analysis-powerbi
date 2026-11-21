@@ -1,0 +1,79 @@
+{
+  "transactions": 300000,
+  "transaction_value": 3474321934.16,
+  "active_users": 100761,
+  "registered_users": 107658,
+  "successful_transactions": 287993,
+  "success_rate": 0.9599766666666667,
+  "source_status_labels": {
+    "Successful": 287993,
+    "Failed": 9980,
+    "Wrong PIN": 700,
+    "Server error": 692,
+    "Insufficient amount": 635
+  },
+  "duplicate_name_rows": 32404,
+  "weekday_transactions": 214812,
+  "weekend_transactions": 85188,
+  "services": {
+    "Loans": 2532509362.75,
+    "Insurance": 512922965.71,
+    "Money Transfer": 378194632.22,
+    "Recharge Bills": 50694973.48
+  },
+  "date_min": "2024-01-01",
+  "date_max": "2024-12-30",
+  "weekday_share": 0.71604,
+  "monthly": {
+    "2024-01": {
+      "transactions": 25428,
+      "value": 293455792.75
+    },
+    "2024-02": {
+      "transactions": 24040,
+      "value": 278875720.29
+    },
+    "2024-03": {
+      "transactions": 25306,
+      "value": 292700831.88
+    },
+    "2024-04": {
+      "transactions": 24563,
+      "value": 283586471.55
+    },
+    "2024-05": {
+      "transactions": 25659,
+      "value": 296057183.76
+    },
+    "2024-06": {
+      "transactions": 24587,
+      "value": 286317544.3
+    },
+    "2024-07": {
+      "transactions": 25576,
+      "value": 304485074.01
+    },
+    "2024-08": {
+      "transactions": 25329,
+      "value": 290214484.41
+    },
+    "2024-09": {
+      "transactions": 24507,
+      "value": 282905485.61
+    },
+    "2024-10": {
+      "transactions": 25478,
+      "value": 294942244.07
+    },
+    "2024-11": {
+      "transactions": 24832,
+      "value": 284621154.42
+    },
+    "2024-12": {
+      "transactions": 24695,
+      "value": 286159947.11
+    }
+  },
+  "latest_count_mom": -0.0055170747422680355,
+  "latest_value_mom": 0.005406459309518885
+}

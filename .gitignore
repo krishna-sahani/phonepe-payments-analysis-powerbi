@@ -1,0 +1,5 @@
+**/.pbi/
+**/cache.abf
+**/localSettings.json
+*.tmp
+.DS_Store
